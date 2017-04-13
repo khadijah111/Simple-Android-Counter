@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khadijah.teamscore1.MainActivity"
+    android:background="#E0D9E2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/Team1Text"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="الفريق الأول"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/Team1Score"
+                android:textSize="50dp"
+                android:layout_margin="16dp"
+                android:text="0"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus1team1"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="نقطة"
+                android:textSize="20dp"
+                android:textColor="#FFFF"
+                android:background="#963AAE"
+                android:onClick="add1Team1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus2Team1"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="نقطتين"
+                android:textSize="20dp"
+                android:onClick="add2Team1"
+                android:textColor="#FFFF"
+                android:background="#963AAE" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus3team1"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="ثلاث نقاط"
+                android:onClick="add3Team1"
+                android:textSize="20dp"
+                android:textColor="#FFFF"
+                android:background="#963AAE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/Team2Text"
+                android:textStyle="bold"
+                android:text="الفريق الثاني"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/Team2Score"
+                android:textSize="50dp"
+                android:layout_margin="16dp"
+                android:text="0"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus1team2"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="نقطة"
+                android:onClick="add1Team2"
+                android:textSize="20dp"
+                android:textColor="#FFFF"
+                android:background="#963AAE" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus2Team2"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="نقطتين"
+                android:onClick="add2Team2"
+                android:textSize="20dp"
+                android:textColor="#FFFF"
+                android:background="#963AAE" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus3team2"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:text="ثلاث نقاط"
+                android:textSize="20dp"
+                android:textColor="#FFFF"
+                android:background="#963AAE"
+                android:onClick="add3Team2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
+        android:padding="16dp"
+        android:layout_margin="20dp"
+        android:text="تصفير النتائج"
+        android:textSize="20dp"
+        android:textColor="#FFFF"
+        android:background="#963AAE"
+        android:onClick="reset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+</ScrollView>
